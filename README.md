@@ -22,7 +22,7 @@ Username: user and Password: P2ssw0rd@1
     An Image container registry
     A SQL Server
     A SQL Database
-=========================================================================================================================
+========================================================================
 **Below are two script files to create and destroy the infrastructure**
 =======================================================================
 **1) create_infra.sh**
@@ -52,9 +52,10 @@ az sql server create -l $REGION -g $RGP -n $SQLSERVER -u sqladmin -p P2ssw0rd123
 
 az sql db create -g $RGP -s $SQLSERVER -n $DB --service-objective S0
 
-
 ======================================================
+
 **2 ) destroy_infra.sh**
+
 ======================================================
 #!/bin/bash
 
