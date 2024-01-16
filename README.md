@@ -60,6 +60,7 @@ az sql db create -g $RGP -s $SQLSERVER -n $DB --service-objective S0
 **2 ) destroy_infra.sh**
 
 ======================================================
+
 #!/bin/bash
 
 #Set environment variables
