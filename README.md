@@ -12,6 +12,7 @@ Steps
   5) Azure Cloud Shell -> Login into the created AKS cluster by downloading cluster credentials, and Check the noded, pods, deploy, and services. Browse the LoadBalancer External IP
 
 The application should be running. 
+
 Username: user and Password: P2ssw0rd@1
 
 
@@ -31,10 +32,10 @@ Username: user and Password: P2ssw0rd@1
 =======================================================================
 #!/bin/bash
 REGION="westus"
-RGP="day11-demo-rg"
-CLUSTER_NAME="day11-demo-cluster"
-ACR_NAME="day11demoacr"
-SQLSERVER="day11-demo-sqlserver"
+RGP="askproj-demo-rg"
+CLUSTER_NAME="askproj-demo-cluster"
+ACR_NAME="askprojdemoacr"
+SQLSERVER="askproj-demo-sqlserver"
 DB="mhcdb"
 
 #Create Resource group
@@ -63,10 +64,10 @@ az sql db create -g $RGP -s $SQLSERVER -n $DB --service-objective S0
 
 #Set environment variables
 REGION="westus"
-RGP="day11prem-demo-rg"
-CLUSTER_NAME="day11prem-demo-cluster"
-ACR_NAME="day11premdemoacr"
-SQLSERVER="day11prem-demo-sqlserver"
+RGP="askproj-demo-rg"
+CLUSTER_NAME="askproj-demo-cluster"
+ACR_NAME="askprojdemoacr"
+SQLSERVER="askproj-demo-sqlserver"
 DB="mhcdb"
 
 #Function to handle errors
