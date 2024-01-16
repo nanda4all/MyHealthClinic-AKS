@@ -22,7 +22,9 @@ Username: user and Password: P2ssw0rd@1
     An Image container registry
     A SQL Server
     A SQL Database
+
 ========================================================================
+
 **Below are two script files to create and destroy the infrastructure**
 =======================================================================
 **1) create_infra.sh**
