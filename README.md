@@ -31,6 +31,7 @@ Username: user and Password: P2ssw0rd@1
 **1) create_infra.sh**
 =======================================================================
 #!/bin/bash
+
 REGION="westus"
 RGP="askproj-demo-rg"
 CLUSTER_NAME="askproj-demo-cluster"
@@ -39,12 +40,15 @@ SQLSERVER="askproj-demo-sqlserver"
 DB="mhcdb"
 
 #Create Resource group
+
 az group create --name $RGP --location $REGION
 
 #Deploy AKS
+
 az aks create --resource-group $RGP --name $CLUSTER_NAME --enable-addons monitoring --generate-ssh-keys --location $REGION
 
 #Deploy ACR
+
 az acr create --resource-group $RGP --name $ACR_NAME --sku Standard --location $REGION
 
 #Authenticate with ACR to AKS
